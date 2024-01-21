@@ -19,7 +19,7 @@ public class FinancialSystemController {
 
         private final JmsTemplate jmsTemplate;
 
-        @GetMapping("/{studentId}/{paidInSum}")
+        @PutMapping("/{studentId}/{paidInSum}")
         //public Payment postPaidInSum(@PathVariable long studentId, @PathVariable int paidInSum) {
         public Payment postPaidInSum(@PathVariable long studentId, @PathVariable int paidInSum) {
 
