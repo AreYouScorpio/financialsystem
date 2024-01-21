@@ -9,14 +9,13 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
 import java.util.Random;
-
+@RequiredArgsConstructor
+@RestController
+@RequestMapping("api/financialsystem")
 public class FinancialSystemController {
 
 
-    @RequiredArgsConstructor
-    @RestController
-    @RequestMapping("api/financialsystem")
-    public class FinancialsystemController {
+
 
         private final JmsTemplate jmsTemplate;
 
@@ -42,4 +41,4 @@ public class FinancialSystemController {
     }
 
 
-}
+
