@@ -5,7 +5,7 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
-public class Payment {
+public class PaymentDto {
     long studentId;
     int cashPaidIn;
 }
